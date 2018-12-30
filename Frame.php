@@ -1,8 +1,5 @@
 <?php
 
-namespace FitCompany\Models\Entities\Kudos;
-
-
 class Frame
 {
     public $gameId;
