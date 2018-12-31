@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Frame
 {
     public $gameId;

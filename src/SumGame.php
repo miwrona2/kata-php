@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class SumGame
 {
     public function sum(array $frames): int
