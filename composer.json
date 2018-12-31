@@ -1,5 +1,6 @@
 {
     "name": "kata",
+    "description": "Bowling Game Kata PHP ",
     "require": {
         "php": ">=7.0.0"
     },
