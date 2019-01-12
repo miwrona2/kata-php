@@ -66,8 +66,9 @@ class SumGameTest extends \Codeception\TestCase\Test
 
         $frame10 = new Frame();
         $frame10->setGameId($firstGameId);
-        $frame10->setFirstRoll(0);
+        $frame10->setFirstRoll(10);
         $frame10->setSecondRoll(0);
+        $frame10->setThirdRoll(5);
 
         $frames = [
             $frame1,
@@ -84,6 +85,6 @@ class SumGameTest extends \Codeception\TestCase\Test
         $sumGame = new SumGame();
         $sum = $sumGame->sum($frames);
 
-        $this->assertEquals(42, $sum);
+        $this->assertEquals(57, $sum);
     }
 }

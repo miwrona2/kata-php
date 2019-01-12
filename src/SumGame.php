@@ -15,11 +15,17 @@ class SumGame
             $framePoints = $firstRoll + $secondRoll;
             $points += $framePoints;
 
-            if ($firstRoll === 10) {
-                $points += $frames[$i+1]->getFirstRoll();
-                $points += $frames[$i+1]->getSecondRoll();
-            } elseif ($firstRoll + $secondRoll === 10) {
-                $points += $frames[$i+1]->getFirstRoll();
+            if ($i !== count($frames)-1) {
+                if ($firstRoll === 10) {
+                    $points += $frames[$i + 1]->getFirstRoll();
+                    $points += $frames[$i + 1]->getSecondRoll();
+                } elseif ($firstRoll + $secondRoll === 10) {
+                    $points += $frames[$i + 1]->getFirstRoll();
+                }
+            } else {
+                if($firstRoll === 10 || $firstRoll + $secondRoll === 10){
+                    $points += $frame->getThirdRoll();
+                }
             }
 
         }

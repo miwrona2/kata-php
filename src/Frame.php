@@ -7,6 +7,7 @@ class Frame
     public $gameId;
     public $firstRoll;
     public $secondRoll;
+    public $thirdRoll;
 
     public function getFirstRoll()
     {
@@ -39,6 +40,17 @@ class Frame
     public function setSecondRoll($secondRoll): Frame
     {
         $this->secondRoll = $secondRoll;
+        return $this;
+    }
+
+    public function getThirdRoll()
+    {
+        return $this->thirdRoll ?: null;
+    }
+
+    public function setThirdRoll($thirdRoll): Frame
+    {
+        $this->thirdRoll = $thirdRoll;
         return $this;
     }
 
