@@ -1,6 +1,3 @@
 /vendor
 composer.lock
-/tests/_output
-/tests/_envs
-/tests/_support
-/tests/_data/*
+.idea/
